@@ -1,0 +1,30 @@
+.titleNodeDefault {
+  display: flex;
+  align-items: center;
+  .blue-vertical-line {
+    width: 2px;
+    height: 1em;
+    margin: 0 8px;
+    background: rgba(0, 132, 255, 100);
+  }
+}
+
+.titleNodeDefault2 {
+  text-align: left;
+  &::before {
+    padding: 0 8px;
+    color: rgba(0, 132, 255, 100);
+    content: '|';
+  }
+}
+.cardContainer {
+  height: 100%;
+  background-color: white;
+  border-radius: 4px;
+}
+.titleHead {
+  display: flex;
+  align-items: center;
+  min-height: 40px;
+  border-bottom: 1px solid rgba(238, 238, 238, 100);
+}
