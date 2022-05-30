@@ -3,7 +3,7 @@
   "name": "mud-components",
   "description": "react 组件",
   "author": "mudssky",
-  "license":"Apache-2.0 license",
+  "license":"Apache-2.0",
   "version": "0.0.1",
   "keywords": ["react","components"],
   "homepage":"https://mudssky.github.io/mud-components/",
