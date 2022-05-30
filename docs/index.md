@@ -1,7 +1,7 @@
 ---
 hero:
-  title: rc-components
-  desc: rc-components site example
+  title: mud-components
+  desc: mud-components site example
   actions:
     - text: Getting Started
       link: /components
@@ -18,4 +18,4 @@ features:
 footer: Open-source MIT Licensed | Copyright © 2020<br />Powered by [dumi](https://d.umijs.org)
 ---
 
-## Hello rc-components!
+## Hello mud-components!

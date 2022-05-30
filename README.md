@@ -1,4 +1,4 @@
-# rc-components
+# mud-components
 
 ## Getting Started
 

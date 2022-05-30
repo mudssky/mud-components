@@ -14,7 +14,7 @@ group:
 /**
  * background: '#f6f7f9'
  */
-import { TitledCard } from 'rc-components'
+import { TitledCard } from 'mud-components'
 import React from 'react'
 
 export default () => (

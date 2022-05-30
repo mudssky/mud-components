@@ -10,7 +10,7 @@ nav:
 Demo:
 
 ```tsx
-import { Foo } from 'rc-components'
+import { Foo } from 'mud-components'
 import React from 'react'
 
 export default () => <Foo title="First Demo" />
