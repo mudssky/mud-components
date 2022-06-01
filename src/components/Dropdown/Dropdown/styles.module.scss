@@ -1,0 +1,9 @@
+.container {
+  position: relative;
+  display: inline-block;
+  .dropdown-container {
+    position: absolute;
+    z-index: 1000;
+    background-color: gold;
+  }
+}

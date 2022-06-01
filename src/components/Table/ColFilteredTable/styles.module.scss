@@ -1,0 +1,193 @@
+$rowheight: 24px;
+
+.tablebox {
+  .headertitle {
+    .headertoolright {
+      position: relative;
+      //   display: flex;
+      //   justify-content: flex-end;
+      .filterBtn {
+        // position: relative;
+        // position: absolute;
+        // top: -28px;
+        // right: 0;
+
+        // z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 20px;
+        height: 20px;
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+
+  .headercell {
+    height: 40px;
+    padding: 0 8px;
+    font-weight: 700;
+    font-size: 14px;
+    background-color: #fafafa;
+    border-right-color: #fafafa;
+    user-select: none;
+  }
+
+  .cell {
+    height: 40px;
+    padding: 0 8px;
+    font-size: 12px;
+    border-right-color: #cccccc;
+    border-bottom-color: 1px solid #f0f0f0;
+
+    &.focus {
+      z-index: 6666;
+      box-shadow: inset 0px 0px 0px 1px #4090ff;
+    }
+
+    &.copyHighlight {
+      background-color: #ffffff;
+      animation: backgroundMove 1.5s ease-out;
+    }
+  }
+
+  :global {
+    .xh-table.xh-table-small .xh-table-tbody > tr td {
+      padding: 0 8px;
+      border-right: 1px solid #cccccc;
+      border-bottom: 1px solid #cccccc;
+    }
+
+    .xh-table.xh-table-small .xh-table-thead > tr > th {
+      padding: 0 8px;
+      border-right: 1px solid #cccccc;
+      border-bottom: 1px solid #cccccc;
+    }
+
+    .ant-table-thead > tr > th,
+    .ant-table-tbody > tr > td,
+    .ant-table tfoot > tr > th,
+    .ant-table tfoot > tr > td {
+      padding: 0 10px;
+    }
+  }
+
+  .pagination {
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+    justify-content: space-between;
+    margin-top: 120px;
+    padding: 10px;
+    text-align: center;
+
+    .paginationleft {
+      color: #2e5ef0;
+      font-weight: bold;
+      font-size: 14px;
+    }
+  }
+
+  .react-resizable-handle {
+    position: absolute;
+    right: -5px;
+    bottom: 0;
+    z-index: 1;
+    width: 10px;
+    height: 100%;
+    cursor: col-resize;
+
+    &.active::before {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      z-index: 50;
+      border-left: solid 1px black;
+      content: '';
+    }
+  }
+}
+
+@keyframes backgroundMove {
+  from {
+    background-color: #4090ff;
+  }
+
+  to {
+    background-color: transparent;
+  }
+}
+
+:global {
+  .checkboxbox {
+    width: 220px;
+    margin: 0 10px 0 0;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.3);
+
+    .checkboxheader {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 0 0 10px;
+      border-bottom: 1px solid #cccccc;
+
+      .icon {
+        padding: 0;
+        color: rgba(0, 0, 0, 0.45);
+        font-weight: 700;
+        line-height: 1;
+        text-decoration: none;
+        background: transparent;
+        border: 0;
+        outline: 0;
+        cursor: pointer;
+      }
+    }
+
+    .item {
+      padding: 0px 0 5px 20px;
+    }
+  }
+
+  .react-contexify {
+    padding: 0 !important;
+  }
+
+  .react-contexify__theme--light {
+    padding: 0 !important;
+  }
+
+  .ant-table-thead > tr > th,
+  .ant-table-tbody > tr > td,
+  .ant-table tfoot > tr > th,
+  .ant-table tfoot > tr > td {
+    height: 40px;
+    padding: 0 8px;
+  }
+  //修改表头文字、背景颜色
+  .ant-table-thead > tr > th {
+    font-weight: 600;
+  }
+  .ant-layout-content {
+    overflow: auto;
+  }
+
+  #components-table-resizable-column .react-resizable {
+    position: relative;
+    background-clip: padding-box;
+  }
+
+  #components-table-resizable-column .react-resizable-handle {
+    position: absolute;
+    right: -5px;
+    bottom: 0;
+    z-index: 1;
+    width: 10px;
+    height: 100%;
+    cursor: col-resize;
+  }
+}
